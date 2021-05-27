@@ -1,0 +1,7 @@
+*.bdf
+.cpptest/
+.settings/
+build/
+obj/
+reports/
+ATM_Cpp14_lib.a
