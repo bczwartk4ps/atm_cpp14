@@ -12,7 +12,7 @@ Bank::~Bank()
 }
 
 // Get acount number. Only return valid object if password is correct
-Account* Bank::getAccount(int num, std::string password)
+Account* Bank::getAccount(int num, const std::string & password)
 {
     Account* userAccount = nullptr;
     if (myAccounts.size() > num)
