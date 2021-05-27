@@ -30,7 +30,8 @@ void ATM::fillUserRequest(UserRequest request, double amount)
             case UserRequest::REQUEST_WITHDRAW:
                 withdraw(amount); break;
             case UserRequest::REQUEST_TRANSACTIONS:
-                showTransations();
+                showTransations(); break;
+	    default: break;
         }
 }
 
