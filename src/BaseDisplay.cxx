@@ -12,7 +12,7 @@ void BaseDisplay::showInfoToUser(const char* message) const
     }
 }
 
-void BaseDisplay::showBalance(double balance)
+void BaseDisplay::showBalance(double balance) const
 {
     cout << " : " << balance << endl;
 }
@@ -20,7 +20,7 @@ void BaseDisplay::showBalance(double balance)
 BaseDisplay::DisplayType BaseDisplay::getType() {return SECURE;}
 void BaseDisplay::logError(std::string msg) {};
 
-void BaseDisplay::showTransaction(UserRequest request, double amount)
+void BaseDisplay::showTransaction(UserRequest request, double amount) const
 {
     switch (request) {
         case UserRequest::REQUEST_TRANSACTIONS:

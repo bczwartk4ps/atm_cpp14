@@ -16,8 +16,8 @@ class BaseDisplay
         ~BaseDisplay() noexcept {};
 
         virtual void showInfoToUser(const char* message) const;
-        virtual void showBalance(double balance);
-        virtual void showTransaction(UserRequest request, double amount);
+        virtual void showBalance(double balance) const;
+        virtual void showTransaction(UserRequest request, double amount) const;
         virtual enum DisplayType getType();
         virtual void logError(std::string msg);
 };
